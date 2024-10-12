@@ -1,0 +1,3 @@
+#!/bin/env bash
+rm -rf /tmp/.X*lock
+exec Xvfb ${DISPLAY} -screen ${SCREEN} ${GEOMETRY} -fbdir /var/tmp -listen tcp -noreset -ac +extension RANDR &>> ${HOME}/.local/log/xvfb.log

@@ -1,0 +1,2 @@
+#!/bin/bash
+exec x11vnc -forever -shared -rfbport ${VNC_PORT} -rfbportv6 ${VNC_PORT} -display ${DISPLAY} &>> ${HOME}/.local/log/x11vnc.log

@@ -1,0 +1,2 @@
+#!/bin/bash
+exec websockify --web /opt/bin/noVNC --cert=${HOME}/.local/config/novnc/self.pem ${NO_VNC_PORT}  localhost:${VNC_PORT}
